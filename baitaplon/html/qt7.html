@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,20 +8,15 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-    <link rel="stylesheet" href="../css/all.css">
-
-    <script src="../js/chuyenanh.js"></script>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/hathanhnhan.css" />
     <script src="../js/dangky.js"></script>
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Trang chủ</title>
+    <title>Nồi chiên không dầu</title>
+    <style></style>
 </head>
 
-
 <body class="tong">
-   
-    <script src="script.js"></script>
     <div class="container-fluid">
         <div class="row">
             <a href="../html/index.html">
@@ -48,11 +44,13 @@
                 </ul>
             </div>
 
+
             <div id="nav1" class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Search........................." />
                 <a href="#"><i class="fas fa-search"></i></a>
             </div>
-        
+
+
             <div id="nav3" class="col-sm-2">
                 <a id="btnDK">ĐĂNG KÝ TÀI KHOẢN</a>
                 <div class="modal fade"
@@ -182,107 +180,229 @@
             </div>
         </div>
     </div>
+    <!-- sản phẩm -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <img src="../img/qt1.webp" alt="Bình siêu tốc(25x17cm)" width="620px" height="415px" />
+            </div>
+            <div class="col-sm-5">
+                <h2 style="font-size: 50px;">Áo sơ mi siêu ngầu</h2>
+                <a href="#">★★★★☆</a> | 2,4k &nbsp Đã bán
+                <p style="font-size: 25px;margin-bottom: -5px;margin-top: 10px;font-weight: bold;">Giá: 350.000 VND</p>
+                <p style="text-decoration: line-through; color: #9f9d9d">
+                    475.000 VND
+                </p>
+                <p>Kích thước: 25x17 cm</p>
+                <label for="soluong" style="font-weight: normal;">Số lượng: </label> <br />
+                <input type="number" min="1" id="soluong" value="1" class="form-control" style="width: 50px;" />
+                <p style="position: relative;left: 60px;top:-29px;margin-bottom: -8px;color: #7a7979;">129 sản phẩm có sẵn</p>
+                <p>Vận chuyển:&nbsp <i class="fas fa-truck" style="color: #c4b22a;margin-bottom: 11px;"></i>&nbsp Miễn phí vận chuyển</p>
 
-
-    <div class="container" style="margin-bottom: 0px;">
-        <div class="row" style="height: 590px;">
-            <div id="slide">
-                <img id="anh" src="../img/avt1.webp" alt="" />
-                <div class="dieuhuong">
-                    <i class="fas fa-caret-up fa-rotate-270" onclick="chuyenAnhNguoc()"></i>
-                    <i class="fas fa-caret-up fa-rotate-90" onclick="chuyenAnh()"></i>
+                <div class="row" style="height: 30px;padding-left: 15px;font-weight: bold;">
+                    <div id="thongBaoGioHang" style="display: none;">
+                        <p>Sản phẩm đã được thêm vào giỏ hàng!</p>
+                    </div>
                 </div>
+
+                <button onclick="themVaoGioHang()" data-toggle="modal">
+            Thêm vào giỏ hàng
+          </button>
+                <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
+                <button data-toggle="modal" data-target="#buyModal" data-unit-price="250000" data-product-name="Dâu tây sấy khô (túi 500g)" onclick="setProductInfo('Dâu tây sấy khô (túi 500g)', 250000)">Mua ngay</button>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row text-center" style="width: 100%;">
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-sm-7" style="line-height: 25px;">
+                <p>
+                    &nbsp &nbsp &nbsp &nbsp Sự lựa chọn hoàn hảo để bạn thể hiện phong cách và sự tự tin mỗi ngày!.
+                </p>
+                <h3 class="h4" style="padding: 0px ;background-color:#efefef; margin-left: -15px;padding: 10px;border-radius: 5px;">ƯU ĐIỂM SẢN PHẨM</h3>
+                <ul>
+                    <li>Chất lượng cao, dễ sử dụng.</li>
+                    <li>Đóng gói cẩn thận.</li>
+                    <li>Giá cả hợp lý.</li>
+                </ul>
+            </div>
+            <div class="col-sm-5">
+                <ul style="margin-left: -41px;list-style-type: none;text-align: justify;">
+                    <hr style="border-color:grey;">
+                    <li>
+                        <p>
+                            "Thời Trang Nam Store" cam kết bán hàng uy tín không rò rỉ
+                            <hr style="border-color:grey;">
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Tất cả sản phẩm đồ gia dụng của "Thời Trang Nam Store" đều đạt chuẩn an toàn cho sức khỏe người dùng.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12">
-                <h2>CÁC SẢN PHẨM BÁN CHẠY</h2>
-                <p style="font-size: 18px;">Chúng tôi luôn mang đến cho bạn những sản phẩm tốt nhất.</p>
+                <h3 class="h4" style="padding: 0px ;background-color:#efefef; margin-left: -15px;padding: 10px;border-radius: 5px;">CHI TIẾT SẢN PHẨM</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7">
+                <table>
+                    <tr>
+                        <td style="color: #8c8b8b;">Danh mục</td>
+                        <td>
+                            <a href="../html/index.html">Thời Trang Nam Store</a> >
+                            <a href="../html/aopolo.html">ÁO POLO</a> >
+                            <a href="../html/quantay.html">QUẦN TÂY</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Thương hiệu</td>
+                        <td><a href="..//html/index.html">Thời Trang Nam Store</a></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Kích thước</td>
+                        <td>25x17 cm</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Xuất xứ</td>
+                        <td>Việt Nam</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Loại</td>
+                        <td>Bình siêu tốc</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Thành phần</td>
+                        <td>100% inox</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Kho hàng</td>
+                        <td>129</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #8c8b8b;">Gửi từ</td>
+                        <td>TP.HCM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-5">
+                <img src="../img/avt3.webp" alt="hanhnhan" width="440px" style="margin-top: 25px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="h4" style="padding: 0px ;background-color:#efefef; margin-left: -15px;padding: 10px;border-radius: 5px;">MÔ TẢ SẢN PHẨM</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="mota">
+                <p>Tên sản phẩm: Áo sơ mi nam </p>
+                <p>Mô tả:
+                    Chiếc áo sơ mi Essential Classic mang phong cách thanh lịch, tối giản, phù hợp cho cả môi trường công sở và các dịp gặp gỡ thân mật. Với thiết kế hiện đại, form dáng vừa vặn, chiếc áo mang lại sự thoải mái và tự tin suốt ngày dài. Chất liệu cotton thoáng khí giúp thấm hút mồ hôi tốt, mang lại cảm giác dễ chịu kể cả trong thời tiết nóng bức.
+                    </p>
+                <p>Điểm nổi bật:</p>
+                <p>Thiết kế cổ điển: Form áo cơ bản, dễ phối đồ với quần tây, jeans hay chân váy.
+                    Màu sắc tinh tế: Có sẵn các màu trung tính như trắng, xanh pastel, và xám.
+                    Chất liệu cao cấp: Bền màu, không xù lông sau nhiều lần giặt.
+                    Ứng dụng đa năng: Dễ dàng diện trong công việc, tiệc tùng hoặc các buổi đi chơi cuối tuần.
+                    </p>
+                    <p>Hướng dẫn bảo quản:
+                    
+                        <br>Giặt máy ở chế độ nhẹ, nhiệt độ nước dưới 30°C.
+                        Ủi ở nhiệt độ trung bình.
+                        Tránh phơi trực tiếp dưới ánh nắng gắt để giữ màu áo lâu bền.
+                        Kích cỡ: S, M, L, XL (Xem bảng size chi tiết kèm theo).</p>
+                
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 style="padding: 10px 405px 10px 405px;background-color:#efefef;border-radius: 10px;">CÁC SẢN PHẨM KHÁC</h2> <br>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-3">
                 <div class="product">
-                    <a href="../html/aosomi1.html" class="img-container"><img src="../img/sm1.webp" alt="Ép chanh" width="200px" height="160px" class="img" /></a><br /><br />
+                    <a href="../html/noicomdien.html" class="img-container"><img src="../img/h10.jpg" alt="Bình siêu tốc" width="200px" height="160px" class="img" /></a><br /><br />
                     <p style="font-size: 16px">
-                        <a href="../html/noichienkhongdau.html"> Áo sơ mi nam tay dài sọc caro</a>
+                        <a href="../html/noicomdien.html"> Nồi cơm điện</a>
                     </p>
                     <p></p>
-                    <p style="color: #c4b22a;">Giá: 500.000 VND</p>
+                    <p style="color: #c4b22a;">Giá: 160.000 VND</p>
                     <p style="
                 font-size: 13px;
                 text-decoration: line-through;
                 color: #9f9d9d;
               ">
-                        715.000 VND
+                        175.000 VND
                     </p>
                     <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="160000" data-product-name="Hạt óc chó sấy khô (túi 500g)" onclick="setProductInfo('Hạt óc chó sấy khô (túi 500g)', 160000)">Mua ngay</button>
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="160000" data-product-name="Hạt Óc chó sấy khô (túi 500g)" onclick="setProductInfo('Hạt Óc chó sấy khô (túi 500g)', 160000)">Mua ngay</button>
                     <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="product">
-                    <a href="../html/aopolo4.html" class="img-container"><img src="../img/h4.jpg" alt="Bình siêu tốc" width="200px" height="160px" class="img" /></a><br /><br />
-                    <p style="font-size: 16px"><a href="../html/aopolo4.html">Áo polo trơn</a></p>
+                    <a href="../html/noidanang.html" class="img-container"><img src="../img/h18.png" alt="Chảo chống dính" width="200px" height="160px" class="img" /></a><br /><br />
+                    <p style="font-size: 16px"><a href="../html/noidanang.html">Nồi đa năng</a></p>
                     <p></p>
-                    <p style="color: #c4b22a;">Giá: 755.000 VND</p>
+                    <p style="color: #c4b22a;">Giá: 115.000 VND</p>
                     <p style="
                 font-size: 13px;
                 text-decoration: line-through;
                 color: #9f9d9d;
               ">
-                        900.000 VND
+                        130.000 VND
                     </p>
                     <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="115000" data-product-name="Bếp điện từ (69x38 cm)" onclick="setProductInfo('Mít sấy khô (túi 1kg)', 115000)">Mua ngay</button>
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="115000" data-product-name="Mít sấy khô (túi 1kg)" onclick="setProductInfo('Mít sấy khô (túi 1kg)', 115000)">Mua ngay</button>
                     <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="product">
-                    <a href="../html/qt7.html" class="img-container"><img src="../img/qt1.webp" alt="Chảo chống dính" width="200px" height="160px" class="img" /></a><br /><br />
+                    <a href="../html/noihap.html" class="img-container"><img src="../img/h11.jpg" alt="Bộ lau nhà" width="200px" height="160px" class="img" /></a><br /><br />
                     <p style="font-size: 16px">
-                        <a href="../html/qt7.html">Quần Tây ống suông</a>
+                        <a href="../html/noihap.html">Nồi hấp</a>
                     </p>
                     <p></p>
-                    <p style="color: #c4b22a;">Giá: 650.000 VND</p>
+                    <p style="color: #c4b22a;">Giá: 150.000 VND</p>
                     <p style="
                 font-size: 13px;
                 text-decoration: line-through;
                 color: #9f9d9d;
               ">
-                        775.000 VND
+                        175.000 VND
                     </p>
                     <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="150000" data-product-name="Chảo chống dính (54cm)" onclick="setProductInfo('Hạt hạnh nhân sấy khô (túi 1kg)', 150000)">Mua ngay</button>
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="150000" data-product-name="Hạt hạnh nhân sấy khô (túi 1kg)" onclick="setProductInfo('Hạt hạnh nhân sấy khô (túi 1kg)', 150000)">Mua ngay</button>
                     <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="product">
-                    <a href="../html/aopolo3.html" class="img-container"><img src="../img/polo3.webp" alt="Bộ lau nhà" width="200px" height="160px" class="img" /></a><br /><br />
+                    <a href="../html/noinauchaocham.html" class="img-container"><img src="../img/h15.jpg" alt="Bếp điện từ" width="200px" height="160px" class="img" /></a><br /><br />
                     <p style="font-size: 16px">
-                        <a href="../html/aopolo3.html">Áo Polo trơn</a>
+                        <a href="../html/noinauchaocham.html">Nồi nấu cháo chậm</a>
                     </p>
                     <p></p>
-                    <p style="color: #c4b22a;">Giá: 350.000 VND</p>
+                    <p style="color: #c4b22a;">Giá: 40.000 VND</p>
                     <p style="
                 font-size: 13px;
                 text-decoration: line-through;
                 color: #9f9d9d;
               ">
-                        449.000 VND
+                        49.000 VND
                     </p>
                     <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="40000" data-product-name="Khoai lang tím sấy khô (túi 500g)" onclick="setProductInfo('Khoai lang tím sấy khô (túi 500g)', 40000)">Mua ngay</button>
-                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="40000" data-product-name="Khoai lang tím sấy khô (500g)" onclick="setProductInfo('Khoai lang tím sấy khô (500g)', 40000)">Mua ngay</button>
+                    <a class="a1" href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -315,9 +435,11 @@
                 </div>
             </div>
         </div>
+        <!-- Thêm thông tin chi tiết khác về sản phẩm nếu cần -->
+        <!-- Modal mua sản phẩm, bạn có thể sử dụng modal đã có sẵn -->
+        <!-- Đoạn mã modal đã có sẵn ở trang gốc -->
     </div>
-
-
+    </div>
     <div class="container-fluid">
         <div class="row" style="height: 234px; background-color: #444">
             <div id="sub1" class="col-sm-5">
@@ -378,27 +500,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="buyModalLabel">Xác nhận đặt hàng</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-primary">Xác nhận mua hàng</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>

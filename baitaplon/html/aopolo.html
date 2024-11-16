@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,18 +10,13 @@
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <link rel="stylesheet" href="../css/mayxaydanang.css" />
     <link rel="stylesheet" href="../css/all.css">
-
-    <script src="../js/chuyenanh.js"></script>
     <script src="../js/dangky.js"></script>
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Trang chủ</title>
+    <title>Các sản phẩm đồ gia dụng</title>
 </head>
 
-
 <body class="tong">
-   
-    <script src="script.js"></script>
     <div class="container-fluid">
         <div class="row">
             <a href="../html/index.html">
@@ -30,7 +26,6 @@
                 </div>
             </a>
         </div>
-
         <div class="row" style="background-color: #444;">
             <div id="nav" class="col-sm-6">
                 <ul class="menu">
@@ -47,12 +42,10 @@
                     <li><a href="../html/contact.html">LIÊN HỆ</a></li>
                 </ul>
             </div>
-
             <div id="nav1" class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Search........................." />
                 <a href="#"><i class="fas fa-search"></i></a>
             </div>
-        
             <div id="nav3" class="col-sm-2">
                 <a id="btnDK">ĐĂNG KÝ TÀI KHOẢN</a>
                 <div class="modal fade"
@@ -184,111 +177,118 @@
     </div>
 
 
-    <div class="container" style="margin-bottom: 0px;">
-        <div class="row" style="height: 590px;">
-            <div id="slide">
-                <img id="anh" src="../img/avt1.webp" alt="" />
-                <div class="dieuhuong">
-                    <i class="fas fa-caret-up fa-rotate-270" onclick="chuyenAnhNguoc()"></i>
-                    <i class="fas fa-caret-up fa-rotate-90" onclick="chuyenAnh()"></i>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container">
-        <div class="row text-center" style="width: 100%;">
-            <div class="col-sm-12">
-                <h2>CÁC SẢN PHẨM BÁN CHẠY</h2>
-                <p style="font-size: 18px;">Chúng tôi luôn mang đến cho bạn những sản phẩm tốt nhất.</p>
-            </div>
-        </div>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="product">
-                    <a href="../html/aosomi1.html" class="img-container"><img src="../img/sm1.webp" alt="Ép chanh" width="200px" height="160px" class="img" /></a><br /><br />
-                    <p style="font-size: 16px">
-                        <a href="../html/noichienkhongdau.html"> Áo sơ mi nam tay dài sọc caro</a>
+                    <a href="../html/aopolo1.html" class="img-container"><img src="../img/h1.jpg" alt="Khoai lang mật" width="200px" height="180px" /></a><br /><br />
+                    <p>
+                        <a href="../html/aopolo1.html">Áo Polo - M6</a>
                     </p>
-                    <p></p>
-                    <p style="color: #c4b22a;">Giá: 500.000 VND</p>
-                    <p style="
-                font-size: 13px;
-                text-decoration: line-through;
-                color: #9f9d9d;
-              ">
-                        715.000 VND
-                    </p>
-                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="160000" data-product-name="Hạt óc chó sấy khô (túi 500g)" onclick="setProductInfo('Hạt óc chó sấy khô (túi 500g)', 160000)">Mua ngay</button>
+                    <p style="color: #c4b22a;">Giá: 400.000 VND</p>
+                    <p class="giagoc">499.000 VND</p>
+
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="40000" data-product-name="Khoai lang mật sấy khô (túi 500g)" onclick="setProductInfo('Khoai lang mật sấy khô (túi 500g)', 40000)">Mua ngay</button>
+
                     <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="product">
-                    <a href="../html/aopolo4.html" class="img-container"><img src="../img/h4.jpg" alt="Bình siêu tốc" width="200px" height="160px" class="img" /></a><br /><br />
-                    <p style="font-size: 16px"><a href="../html/aopolo4.html">Áo polo trơn</a></p>
-                    <p></p>
-                    <p style="color: #c4b22a;">Giá: 755.000 VND</p>
-                    <p style="
-                font-size: 13px;
-                text-decoration: line-through;
-                color: #9f9d9d;
-              ">
-                        900.000 VND
-                    </p>
-                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="115000" data-product-name="Bếp điện từ (69x38 cm)" onclick="setProductInfo('Mít sấy khô (túi 1kg)', 115000)">Mua ngay</button>
-                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="product">
-                    <a href="../html/qt7.html" class="img-container"><img src="../img/qt1.webp" alt="Chảo chống dính" width="200px" height="160px" class="img" /></a><br /><br />
-                    <p style="font-size: 16px">
-                        <a href="../html/qt7.html">Quần Tây ống suông</a>
+                    <a href="../html/aopolo2.html" class="img-container"><img src="../img/h2.jpg" alt="Khoai lang tím" width="200px" height="180px" /></a><br /><br />
+                    <p>
+                        <a href="../html/aopolo2.html">Áo Polo - M1</a>
                     </p>
                     <p></p>
-                    <p style="color: #c4b22a;">Giá: 650.000 VND</p>
-                    <p style="
-                font-size: 13px;
-                text-decoration: line-through;
-                color: #9f9d9d;
-              ">
-                        775.000 VND
-                    </p>
-                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
-                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="150000" data-product-name="Chảo chống dính (54cm)" onclick="setProductInfo('Hạt hạnh nhân sấy khô (túi 1kg)', 150000)">Mua ngay</button>
-                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="product">
-                    <a href="../html/aopolo3.html" class="img-container"><img src="../img/polo3.webp" alt="Bộ lau nhà" width="200px" height="160px" class="img" /></a><br /><br />
-                    <p style="font-size: 16px">
-                        <a href="../html/aopolo3.html">Áo Polo trơn</a>
-                    </p>
-                    <p></p>
-                    <p style="color: #c4b22a;">Giá: 350.000 VND</p>
-                    <p style="
-                font-size: 13px;
-                text-decoration: line-through;
-                color: #9f9d9d;
-              ">
-                        449.000 VND
+                    <p style="color: #c4b22a;">Giá: 450.000 VND</p>
+                    <p class="giagoc">
+                        499.000 VND
                     </p>
                     <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
                     <button data-toggle="modal" data-target="#buyModal" data-unit-price="40000" data-product-name="Khoai lang tím sấy khô (túi 500g)" onclick="setProductInfo('Khoai lang tím sấy khô (túi 500g)', 40000)">Mua ngay</button>
+
+                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="product">
+                    <a href="../html/aopolo3.html" class="img-container"><img src="../img/h3.jpg" alt="Khoai tây" width="200px" height="180px" /></a><br /><br />
+                    <p style="font-size: 16px">
+                        <a href="../html/aopolo3.html"> Áo Polo - M3</a>
+                    </p>
+                    <p></p>
+                    <p style="color: #c4b22a;">Giá: 550.000 VND</p>
+                    <p class="giagoc">
+                        650.000 VND
+                    </p>
+                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="55000" data-product-name="Khoai tây sấy khô (túi 500g)" onclick="setProductInfo('Khoai tây sấy khô (túi 500g)', 55000)">Mua ngay</button>
+
                     <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="product">
+                    <a href="../html/aopolo4.html" class="img-container"><img src="../img/h4.jpg" alt="Khoai môn" width="200px" height="180px" /></a><br /><br />
+                    <p style="font-size: 16px"><a href="../html/aopolo4.html">Áo Polo - M4</a></p>
+                    <p></p>
+                    <p style="color: #c4b22a;">Giá: 590.000 VND</p>
+                    <p class="giagoc">
+                        700.000 VND
+                    </p>
+                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="59000" data-product-name="Khoai môn sấy khô (túi 500g)" onclick="setProductInfo('Khoai môn sấy khô (túi 500g)', 59000)">Mua ngay</button>
+
+                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="product">
+                    <a href="../html/aopolo5.html" class="img-container"><img src="../img/h5.jpg" alt="Rong biển" width="200px" height="180px" /></a><br /><br />
+                    <p style="font-size: 16px">
+                        <a href="../html/aopolo5.html">Áo polo - M2</a>
+                    </p>
+                    <p></p>
+                    <p style="color: #c4b22a;">Giá: 400.000 VND</p>
+                    <p class="giagoc">
+                        550.000 VND
+                    </p>
+                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="40000" data-product-name="Rong biển sấy khô (túi 500g)" onclick="setProductInfo('Rong biển sấy khô (túi 500g)', 40000)">Mua ngay</button>
+
+                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="product">
+                    <a href="../html/aopolo6.html" class="img-container"><img src="../img/h6.webp" alt="Rau tiến vua" width="200px" height="180px" /></a><br /><br />
+                    <p style="font-size: 16px">
+                        <a href="../html/aopolo6.html">Áo polo - M12</a>
+                    </p>
+                    <p></p>
+                    <p style="color: #c4b22a;">Giá: 550.000 VND</p>
+                    <p class="giagoc">
+                        650.000 VND
+                    </p>
+                    <!-- Cập nhật nút "Mua ngay" trong mỗi sản phẩm -->
+                    <button data-toggle="modal" data-target="#buyModal" data-unit-price="120000" data-product-name="râu tiến vua sấy khô (túi 250g)" onclick="setProductInfo('râu tiến vua sấy khô (túi 250g)', 120000)">Mua ngay</button>
+
+                    <a class="a1" onclick="giohang()"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    </div>
+
+
+
     <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 id="buyModalLabel"></h3>
+                    <h5 id="buyModalLabel">Số lượng sản phẩm</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -316,8 +316,35 @@
             </div>
         </div>
     </div>
-
-
+    <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="buyModalLabel"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="quantity">Số lượng:</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Nhập số lượng" />
+                        </div>
+                        <!-- Thêm các trường khác tùy ý -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Đóng
+              </button>
+                    <button type="button" class="btn btn-primary" id="confirmPurchase">
+                Xác nhận mua
+              </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row" style="height: 234px; background-color: #444">
             <div id="sub1" class="col-sm-5">
@@ -378,27 +405,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="buyModalLabel">Xác nhận đặt hàng</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                </div>
-                <div class="modal-body">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-primary">Xác nhận mua hàng</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>
