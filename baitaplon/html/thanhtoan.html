@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Thanh Toán</title>
+</head>
+<body class="tong">
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <a href="../html/index.html">
+                <div id="head" class="col-sm-12">
+                    <h1>THỜI TRANG NAM STORE</h1>
+                    <p>Sang trọng, mạnh mẽ, thời thượng</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="row" style="background-color: #444;">
+            <div id="nav" class="col-sm-6">
+                <ul class="menu">
+                    <li><a href="../html/index.html" class="home-link">TRANG CHỦ</a></li>
+                    <li><a href="../html/gioithieu.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SẢN PHẨM <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/aosomi.html">ÁO SƠ MI</a></li>
+                            <li><a href="../html/aopolo.html">ÁO POLO</a></li>
+                            <li><a href="../html/quantay.html">QUẦN TÂY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+
+            <div id="nav1" class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Search........................." />
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+
+            <div id="nav3" class="col-sm-2">
+                <a id="btnDK">ĐĂNG KÝ TÀI KHOẢN</a>
+                <a href="thanhtoan.html" class="btn btn-warning" style="margin-left: 10px;"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center">Thông Tin Thanh Toán</h1>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số Điện Thoại:</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa Chỉ Giao Hàng:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ" required>
+                    </div>
+                    <h3>Giỏ Hàng Của Bạn</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Số Lượng</th>
+                                <th>Đơn Giá</th>
+                                <th>Thành Tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Sản phẩm trong giỏ hàng sẽ được thêm vào đây bằng JavaScript -->
+                        </tbody>
+                    </table>
+                    <div class="text-right">
+                        <h3 id="total-price">Tổng Tiền: 0 VND</h3>
+                        <button type="submit" class="btn btn-success">Xác Nhận Thanh Toán</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row" style="height: 234px; background-color: #444">
+            <div id="sub1" class="col-sm-5">
+                <h1>SUBSCRIBE TO US!</h1>
+                <p>Enter Your email address for our mailing list to keep yourself update.</p>
+            </div>
+            <div id="sub2" class="col-sm-4">
+                <input class="form-control" type="email" id="sub" placeholder="Nhập thông tin đăng kí" />
+            </div>
+            <div id="sub3" class="col-sm-3">
+                <button class="form-control" onclick="subcrise()">SUBSCRIBE ME</button>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 30px; background-color: #333; color: #cfcbcb">
+            <div id="lastF1" class="col-sm-4">
+                <h4>ABOUT</h4>
+                <p>Chào mừng bạn đến với THỜI TRANG NAM STORE – nơi hội tụ phong cách và đẳng cấp dành cho phái mạnh. Chúng tôi tự hào mang đến những sản phẩm thời trang nam hiện đại, chất lượng cao, được chọn lọc kỹ lưỡng để đáp ứng mọi nhu cầu từ phong cách công sở lịch lãm, năng động đời thường, đến cá tính riêng biệt.</p>
+            </div>
+            <div id="lastF2" class="col-sm-3">
+                <h4>CONTACT</h4>
+                <i class="fas fa-map-marker-alt"></i>
+                <p style="position: relative; left: 25px; top: -24px">Nguyễn Văn Bảo, Gò Vấp, TP HCM</p>
+                <i class="fas fa-phone" style="position: relative; top: -25px"></i>
+                <p style="position: relative; left: 25px; top: -44px">(03) 97744510</p>
+                <i class="fas fa-envelope" style="position: relative; top: -45px"></i>
+                <p style="position: relative; left: 25px; top: -66px">web.thoitrangnam@gmail.com</p>
+            </div>
+            <div id="lastF3" class="col-sm-2">
+                <h4>PRODUCT</h4>
+                <ul>
+                    <li><a href="../html/index.html">Trang chủ</a></li>
+                    <li><a href="../html/gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="../html/aopolo.html">Sản phẩm</a></li>
+                    <li><a href="../html/contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div id="lastF4" class="col-sm-3">
+                <h4>TIME</h4>
+                <p>Monday to Friday:</p>
+                <p>08:00am - 20:00pm</p>
+                <p>Saturday & Sunday:</p>
+                <p>10:00am - 16:00pm</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="foot" class="col-sm-12">
+                <p>&copy; thoitrangnamstore</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy dữ liệu giỏ hàng từ LocalStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Hiển thị giỏ hàng
+        function displayCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.quantity}</td>
+                    <td>${item.price} VND</td>
+                    <td>${item.quantity * item.price} VND</td>
+                `;
+                cartItems.appendChild(row);
+                total += item.quantity * item.price;
+            });
+
+            document.getElementById('total-price').innerText = `Tổng Tiền: ${total.toLocaleString()} VND`;
+        }
+
+        // Xử lý thanh toán
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Lấy thông tin thanh toán
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+
+            if (!cart.length) {
+                alert('Giỏ hàng trống! Vui lòng thêm sản phẩm.');
+                return;
+            }
+
+            alert(`Cảm ơn ${name}, đơn hàng của bạn đã được đặt thành công!\n\nThông tin thanh toán:\nEmail: ${email}\nSố điện thoại: ${phone}\nĐịa chỉ: ${address}`);
+
+            // Xóa giỏ hàng và chuyển về trang chủ
+            localStorage.removeItem('cart');
+            window.location.href = 'index.html';
+        });
+
+        // Hiển thị giỏ hàng khi tải trang
+        displayCart();
+    </script>
+</body>
+</html>
